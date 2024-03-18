@@ -1,0 +1,6 @@
+- name: printing message
+  hosts: linux
+  tasks:
+  - name: pring message
+    ansible.builtin.shell: echo "this is from ansible" > /home/message.txt
+    
